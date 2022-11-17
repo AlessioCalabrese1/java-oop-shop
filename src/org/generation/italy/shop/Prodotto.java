@@ -27,8 +27,7 @@ public class Prodotto {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return "Nome Prodotto: " + nome + "\nDescrizione: " + descrizione + "\nPrezzo: " + getPrezzo() + "Prezzo con Iva: " + 
-        getPrezzoIva() + "\nCodice prodotto: " + codice;
+        return "Nome Prodotto: " + nome + "\nDescrizione: " + descrizione + "\nPrezzo: " + getPrezzo() + "$\nPrezzo con Iva: " + 
+        getPrezzoIva() + "$\nCodice prodotto: " + codice;
     }
 }
