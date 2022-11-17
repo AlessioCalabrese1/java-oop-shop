@@ -14,7 +14,11 @@ public class Prodotto {
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         Random rnd = new Random();
-        this.codice = rnd.nextInt(10000);
+        String code = "";
+        for (int i = 0; i < 5; i++) {
+            code += Integer.toString(rnd.nextInt(9)) ;
+        }
+        this.codice = Integer.parseInt(code);
     }
 
     int getPrezzo(){
